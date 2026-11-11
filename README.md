@@ -32,13 +32,13 @@ O projeto é uma demonstração didática. A chave é compartilhada manualmente 
 - **Framework:** Arduino para ESP32, linguagem C++.
 - **Criptografia:** AES-256-GCM via mbedTLS incluído no framework ESP32.
 
-## ⚙️ 4. Diagrama de Conexùes (Pinout)
+## 🔌 4. Diagrama de Conexões (Pinout)
 
-Aversão atual não liga sensores, teclado ou display a GPIOs. Cada placa conecta-se ao computador ou à fonte USB pelo conector integrado. As mensagens seguem sem fio entre as placas; nenhum fio entre GPIO é necessário.
+A versão atual não liga sensores, teclado ou display a GPIOs. Cada placa conecta-se ao computador ou à fonte USB pelo conector integrado. As mensagens seguem sem fio entre as placas; nenhum fio entre GPIOs é necessário.
 
-1[Diagrama lógico e de conexão do protótipo](diagramas/arquitetura.svg
+![Diagrama lógico e de conexão do protótipo](diagramas/arquitetura.svg)
 
-|| Componente | Pino do componente | Pino no ESP32 | Observações |
+| Componente | Pino do componente | Pino no ESP32 | Observações |
 | :--- | :--- | :--- | :--- |
 | ESP32 remetente | USB | Conector USB da placa | Gravação e Monitor Serial; alimentação |
 | ESP32 receptora | USB | Conector USB da placa | Gravação e Monitor Serial; alimentação |
